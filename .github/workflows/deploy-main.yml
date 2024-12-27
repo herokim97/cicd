@@ -19,7 +19,7 @@ jobs:
         uses: cloudtype-github-actions/deploy@v1
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
-          project: nbc.docker/cicd
+          project: nbc.docker/cicd 
           stage: main
           yaml: |
             name: cicd
@@ -31,3 +31,4 @@ jobs:
                 url: git@github.com:${{ github.repository }}.git
                 ref: ${{ github.ref }}
               preset: java-springboot
+# 1
